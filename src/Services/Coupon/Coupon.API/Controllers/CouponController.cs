@@ -37,7 +37,7 @@
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<ActionResult<CouponDto>> GetCouponByCodeAsync(string code)
         {
-            _logger.LogInformation("----- Get coupon {CouponCode}", code);
+            _logger.LogInformation(Applying coupon {CouponCode}", code);
 
             var result = _exceptionTrigger.Process(code);
 
